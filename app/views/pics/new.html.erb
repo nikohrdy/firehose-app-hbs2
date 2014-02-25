@@ -1,17 +1,17 @@
 <div class="smurfy span6 offset3 text-center">
 
-	<h1 class="custom-h1">How did Kenny die?</h1>
+	<h1 class="custom-h1">Post A Meal</h1>
 
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :title, label: 'What\'s this pic about?', placeholder: 'Kenny and the Moose' %>
+		<%= f.input :title, label: 'Dish', placeholder: 'Chicken curry' %>
 	</br>
-		<%= f.input :subtitle, label: 'More details', placeholder: 'e.g. Episode 112' %>
+		<%= f.input :subtitle, label: 'Price', placeholder: 'e.g. $12' %>
 	</br>
-		<%= f.input :message, label: 'What were Kenny\'s last words?', placeholder: 'ugh, aghhh' %>
+		<%= f.input :message, label: 'Location, Date & Time', placeholder: 'e.g. 57 Putnam Ave. Cambridge, MA 02163: Wednesday, March 12 at 7:00pm' %>
 	</br>
 		<%= f.input :image, label: "Upload Your image" %>
 	</br>
-		<%= f.submit "Add my pic", :class => 'btn btn-warning btn-large' %>
+		<%= f.submit "Add my dish", :class => 'btn btn-danger btn-large' %>
 
 	<% end %>
 
